@@ -5,29 +5,49 @@
 
 * Top level circuit gen_prop
 
-M1000 P a_17_n39# GND Gnd cmosn w=0.9u l=0.18u
-+  ad=0.405p pd=2.7u as=2.025p ps=12.6u
-M1001 a_17_n39# A GND Gnd cmosn w=0.9u l=0.18u
-+  ad=0.486p pd=2.88u as=0p ps=0u
-M1002 P a_17_n39# VDD w_94_n38# cmosp w=1.8u l=0.18u
-+  ad=0.81p pd=4.5u as=4.86p ps=26.1u
-M1003 a_17_n39# B a_17_n47# w_11_n60# cmosp w=3.6u l=0.18u
-+  ad=1.62p pd=8.1u as=1.944p ps=8.28u
-M1004 a_17_18# B VDD w_11_5# cmosp w=1.8u l=0.18u
+M1000 G a_n37_18# VDD w_30_26# cmosp w=1.8u l=0.18u
++  ad=0.81p pd=4.5u as=8.91p ps=49.5u
+M1001 GND a_69_132# a_201_98# Gnd cmosn w=1.8u l=0.18u
++  ad=4.455p pd=25.2u as=0.972p ps=4.68u
+M1002 a_69_76# B VDD w_63_63# cmosp w=1.8u l=0.18u
 +  ad=0.972p pd=4.68u as=0p ps=0u
-M1005 a_50_18# B GND Gnd cmosn w=1.8u l=0.18u
+M1003 a_n37_18# B VDD w_n43_5# cmosp w=1.8u l=0.18u
 +  ad=0.972p pd=4.68u as=0p ps=0u
-M1006 G a_17_18# VDD w_84_26# cmosp w=1.8u l=0.18u
-+  ad=0.81p pd=4.5u as=0p ps=0u
-M1007 VDD A a_17_18# w_11_5# cmosp w=1.8u l=0.18u
-+  ad=0p pd=0u as=0p ps=0u
-M1008 a_69_n39# B a_17_n39# Gnd cmosn w=0.9u l=0.18u
+M1004 GND A a_105_132# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1005 GND A a_14_98# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1006 VDD a_69_132# P w_159_85# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1007 a_n37_18# A a_n4_18# Gnd cmosn w=1.8u l=0.18u
++  ad=0.81p pd=4.5u as=0.972p ps=4.68u
+M1008 G a_n37_18# GND Gnd cmosn w=0.9u l=0.18u
 +  ad=0.405p pd=2.7u as=0p ps=0u
-M1009 a_17_18# A a_50_18# Gnd cmosn w=1.8u l=0.18u
-+  ad=0.81p pd=4.5u as=0p ps=0u
-M1010 a_17_n47# A VDD w_11_n60# cmosp w=3.6u l=0.18u
+M1009 a_201_98# a_69_76# P Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.81p ps=4.5u
+M1010 a_69_132# a_n22_98# VDD w_63_119# cmosp w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0p ps=0u
+M1011 VDD a_n22_98# a_69_76# w_63_63# cmosp w=1.8u l=0.18u
 +  ad=0p pd=0u as=0p ps=0u
-M1011 G a_17_18# GND Gnd cmosn w=0.9u l=0.18u
-+  ad=0.405p pd=2.7u as=0p ps=0u
+M1012 VDD A a_n22_98# w_n28_85# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1013 VDD A a_n37_18# w_n43_5# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1014 P a_69_76# VDD w_159_85# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1015 a_14_98# B a_n22_98# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.81p ps=4.5u
+M1016 a_105_76# B a_69_76# Gnd cmosn w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0.81p ps=4.5u
+M1017 a_105_132# a_n22_98# a_69_132# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.81p ps=4.5u
+M1018 GND a_n22_98# a_105_76# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1019 a_n4_18# B GND Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1020 VDD A a_69_132# w_63_119# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1021 a_n22_98# B VDD w_n28_85# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
 .end
 
