@@ -1,0 +1,107 @@
+magic
+tech scmos
+timestamp 1764767835
+<< nwell >>
+rect 5 -9 117 47
+<< polysilicon >>
+rect 2 34 11 36
+rect 111 34 123 36
+rect 133 34 136 36
+rect 2 26 11 28
+rect 111 26 123 28
+rect 133 26 136 28
+rect 2 18 11 20
+rect 111 18 123 20
+rect 133 18 136 20
+rect 2 10 11 12
+rect 111 10 123 12
+rect 133 10 136 12
+rect 2 2 11 4
+rect 111 2 123 4
+rect 133 2 136 4
+<< ndiffusion >>
+rect 123 36 133 37
+rect 123 33 133 34
+rect 123 28 133 29
+rect 123 25 133 26
+rect 123 20 133 21
+rect 123 17 133 18
+rect 123 12 133 13
+rect 123 9 133 10
+rect 123 4 133 5
+rect 123 1 133 2
+<< pdiffusion >>
+rect 11 36 111 37
+rect 11 33 111 34
+rect 11 28 111 29
+rect 11 25 111 26
+rect 11 20 111 21
+rect 11 17 111 18
+rect 11 12 111 13
+rect 11 9 111 10
+rect 11 4 111 5
+rect 11 1 111 2
+<< metal1 >>
+rect -6 33 -2 37
+rect -6 25 -2 29
+rect -6 17 -2 21
+rect -6 9 -2 13
+rect -6 1 -2 5
+rect 5 1 8 47
+rect 117 44 142 47
+rect 117 41 120 44
+rect 111 37 123 41
+rect 116 25 120 37
+rect 136 33 139 41
+rect 133 29 139 33
+rect 116 21 123 25
+rect 116 9 120 21
+rect 136 17 139 29
+rect 133 13 139 17
+rect 116 5 123 9
+rect 136 1 139 13
+rect 5 -3 11 1
+rect 133 -3 139 1
+rect 5 -9 8 -3
+<< ntransistor >>
+rect 123 34 133 36
+rect 123 26 133 28
+rect 123 18 133 20
+rect 123 10 133 12
+rect 123 2 133 4
+<< ptransistor >>
+rect 11 34 111 36
+rect 11 26 111 28
+rect 11 18 111 20
+rect 11 10 111 12
+rect 11 2 111 4
+<< polycontact >>
+rect -2 33 2 37
+rect -2 25 2 29
+rect -2 17 2 21
+rect -2 9 2 13
+rect -2 1 2 5
+<< ndcontact >>
+rect 123 37 133 41
+rect 123 29 133 33
+rect 123 21 133 25
+rect 123 13 133 17
+rect 123 5 133 9
+rect 123 -3 133 1
+<< pdcontact >>
+rect 11 37 111 41
+rect 11 29 111 33
+rect 11 21 111 25
+rect 11 13 111 17
+rect 11 5 111 9
+rect 11 -3 111 1
+<< labels >>
+rlabel metal1 139 44 142 47 6 OUT
+rlabel metal1 5 -9 8 47 7 VDD
+rlabel metal1 -6 33 -2 37 3 E
+rlabel metal1 -6 25 -2 29 3 D
+rlabel metal1 -6 17 -2 21 3 C
+rlabel metal1 -6 9 -2 13 3 B
+rlabel metal1 -6 1 -2 5 3 A
+rlabel metal1 136 -3 139 41 7 GND
+<< end >>

@@ -1,0 +1,20 @@
+* SPICE3 file created from AND3.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 a_49_21# B a_49_13# Gnd cmosn w=30 l=2
++  ad=180 pd=72 as=180 ps=72
+M1001 VDD B a_17_13# w_11_0# cmosp w=20 l=2
++  ad=320 pd=152 as=220 ps=102
+M1002 OUT a_17_13# GND Gnd cmosn w=10 l=2
++  ad=50 pd=30 as=200 ps=100
+M1003 a_17_13# C a_49_21# Gnd cmosn w=30 l=2
++  ad=150 pd=70 as=0 ps=0
+M1004 OUT a_17_13# VDD w_93_18# cmosp w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1005 a_17_13# C VDD w_11_0# cmosp w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_49_13# A GND Gnd cmosn w=30 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_17_13# A VDD w_11_0# cmosp w=20 l=2
++  ad=0 pd=0 as=0 ps=0

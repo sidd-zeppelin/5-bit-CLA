@@ -1,0 +1,12 @@
+* SPICE3 file created from NOR2.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 a_7_22# A VDD w_n6_16# cmosp w=40 l=2
++  ad=240 pd=92 as=200 ps=90
+M1001 a_15_0# B OUT Gnd cmosn w=10 l=2
++  ad=50 pd=30 as=60 ps=32
+M1002 OUT B a_7_22# w_n6_16# cmosp w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+M1003 OUT A GND Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=50 ps=30
