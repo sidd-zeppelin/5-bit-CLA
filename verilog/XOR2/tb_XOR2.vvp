@@ -1,0 +1,108 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x60274c622780 .scope module, "tb_XOR2" "tb_XOR2" 2 2;
+ .timescale -9 -12;
+v0x60274c639830_0 .var "A", 0 0;
+v0x60274c6398d0_0 .var "B", 0 0;
+v0x60274c639990_0 .net "Y", 0 0, L_0x60274c639fe0;  1 drivers
+S_0x60274c622910 .scope module, "uut" "XOR2" 2 6, 3 1 0, S_0x60274c622780;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+v0x60274c6392a0_0 .net "A", 0 0, v0x60274c639830_0;  1 drivers
+v0x60274c639390_0 .net "B", 0 0, v0x60274c6398d0_0;  1 drivers
+v0x60274c6394a0_0 .net "Y", 0 0, L_0x60274c639fe0;  alias, 1 drivers
+v0x60274c639540_0 .net "n1", 0 0, L_0x60274c639af0;  1 drivers
+v0x60274c6395e0_0 .net "n2", 0 0, L_0x60274c639c80;  1 drivers
+v0x60274c639720_0 .net "n3", 0 0, L_0x60274c639da0;  1 drivers
+S_0x60274c620550 .scope module, "u1" "NAND2" 3 6, 4 1 0, S_0x60274c622910;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+L_0x60274c639a80 .functor AND 1, v0x60274c639830_0, v0x60274c6398d0_0, C4<1>, C4<1>;
+L_0x60274c639af0 .functor NOT 1, L_0x60274c639a80, C4<0>, C4<0>, C4<0>;
+v0x60274c622f90_0 .net "A", 0 0, v0x60274c639830_0;  alias, 1 drivers
+v0x60274c637e50_0 .net "B", 0 0, v0x60274c6398d0_0;  alias, 1 drivers
+v0x60274c637f10_0 .net "Y", 0 0, L_0x60274c639af0;  alias, 1 drivers
+v0x60274c637fb0_0 .net *"_ivl_0", 0 0, L_0x60274c639a80;  1 drivers
+S_0x60274c638110 .scope module, "u2" "NAND2" 3 8, 4 1 0, S_0x60274c622910;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+L_0x60274c639bf0 .functor AND 1, v0x60274c639830_0, L_0x60274c639af0, C4<1>, C4<1>;
+L_0x60274c639c80 .functor NOT 1, L_0x60274c639bf0, C4<0>, C4<0>, C4<0>;
+v0x60274c638340_0 .net "A", 0 0, v0x60274c639830_0;  alias, 1 drivers
+v0x60274c638400_0 .net "B", 0 0, L_0x60274c639af0;  alias, 1 drivers
+v0x60274c6384d0_0 .net "Y", 0 0, L_0x60274c639c80;  alias, 1 drivers
+v0x60274c6385a0_0 .net *"_ivl_0", 0 0, L_0x60274c639bf0;  1 drivers
+S_0x60274c6386c0 .scope module, "u3" "NAND2" 3 10, 4 1 0, S_0x60274c622910;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+L_0x60274c639d10 .functor AND 1, v0x60274c6398d0_0, L_0x60274c639af0, C4<1>, C4<1>;
+L_0x60274c639da0 .functor NOT 1, L_0x60274c639d10, C4<0>, C4<0>, C4<0>;
+v0x60274c638920_0 .net "A", 0 0, v0x60274c6398d0_0;  alias, 1 drivers
+v0x60274c6389f0_0 .net "B", 0 0, L_0x60274c639af0;  alias, 1 drivers
+v0x60274c638ae0_0 .net "Y", 0 0, L_0x60274c639da0;  alias, 1 drivers
+v0x60274c638b80_0 .net *"_ivl_0", 0 0, L_0x60274c639d10;  1 drivers
+S_0x60274c638cc0 .scope module, "u4" "NAND2" 3 12, 4 1 0, S_0x60274c622910;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+L_0x60274c639e30 .functor AND 1, L_0x60274c639c80, L_0x60274c639da0, C4<1>, C4<1>;
+L_0x60274c639fe0 .functor NOT 1, L_0x60274c639e30, C4<0>, C4<0>, C4<0>;
+v0x60274c638ef0_0 .net "A", 0 0, L_0x60274c639c80;  alias, 1 drivers
+v0x60274c638fe0_0 .net "B", 0 0, L_0x60274c639da0;  alias, 1 drivers
+v0x60274c6390b0_0 .net "Y", 0 0, L_0x60274c639fe0;  alias, 1 drivers
+v0x60274c639180_0 .net *"_ivl_0", 0 0, L_0x60274c639e30;  1 drivers
+    .scope S_0x60274c622780;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "xor2.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x60274c622780 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x60274c639830_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x60274c6398d0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x60274c639830_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x60274c6398d0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x60274c639830_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x60274c6398d0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x60274c639830_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x60274c6398d0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x60274c639830_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x60274c6398d0_0, 0, 1;
+    %delay 20000, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "tb_XOR2.v";
+    "XOR2.v";
+    "/home/sidd-zeppelin/Public/study/college/year-2/sem-1/VLSI-design/project/verilog/NAND2/NAND2.v";

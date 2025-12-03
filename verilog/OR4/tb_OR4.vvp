@@ -1,0 +1,69 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x60a3e0293b20 .scope module, "tb_OR4" "tb_OR4" 2 2;
+ .timescale -9 -12;
+v0x60a3e02a6730_0 .var "A", 0 0;
+v0x60a3e02a67f0_0 .var "B", 0 0;
+v0x60a3e02a68c0_0 .var "C", 0 0;
+v0x60a3e02a69c0_0 .var "D", 0 0;
+v0x60a3e02a6a90_0 .net "Y", 0 0, L_0x60a3e02a6e70;  1 drivers
+v0x60a3e02a6b80_0 .var/i "i", 31 0;
+S_0x60a3e0293cb0 .scope module, "uut" "OR4" 2 7, 3 1 0, S_0x60a3e0293b20;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "C";
+    .port_info 3 /INPUT 1 "D";
+    .port_info 4 /OUTPUT 1 "Y";
+L_0x60a3e02a6c20 .functor OR 1, v0x60a3e02a6730_0, v0x60a3e02a67f0_0, C4<0>, C4<0>;
+L_0x60a3e02a6d60 .functor OR 1, L_0x60a3e02a6c20, v0x60a3e02a68c0_0, C4<0>, C4<0>;
+L_0x60a3e02a6e70 .functor OR 1, L_0x60a3e02a6d60, v0x60a3e02a69c0_0, C4<0>, C4<0>;
+v0x60a3e0293e90_0 .net "A", 0 0, v0x60a3e02a6730_0;  1 drivers
+v0x60a3e02a6170_0 .net "B", 0 0, v0x60a3e02a67f0_0;  1 drivers
+v0x60a3e02a6230_0 .net "C", 0 0, v0x60a3e02a68c0_0;  1 drivers
+v0x60a3e02a6300_0 .net "D", 0 0, v0x60a3e02a69c0_0;  1 drivers
+v0x60a3e02a63c0_0 .net "Y", 0 0, L_0x60a3e02a6e70;  alias, 1 drivers
+v0x60a3e02a64d0_0 .net *"_ivl_0", 0 0, L_0x60a3e02a6c20;  1 drivers
+v0x60a3e02a65b0_0 .net *"_ivl_2", 0 0, L_0x60a3e02a6d60;  1 drivers
+    .scope S_0x60a3e0293b20;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "or4.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x60a3e0293b20 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x60a3e02a6b80_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x60a3e02a6b80_0;
+    %cmpi/s 16, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x60a3e02a6b80_0;
+    %pad/s 4;
+    %split/vec4 1;
+    %store/vec4 v0x60a3e02a69c0_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v0x60a3e02a68c0_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v0x60a3e02a67f0_0, 0, 1;
+    %store/vec4 v0x60a3e02a6730_0, 0, 1;
+    %delay 10000, 0;
+    %load/vec4 v0x60a3e02a6b80_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x60a3e02a6b80_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %delay 20000, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_OR4.v";
+    "OR4.v";

@@ -1,0 +1,248 @@
+
+Checking parameters for BSIM 3.2 model cmosp
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosp
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosp
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosp
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosp
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosn
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosn
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosn
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosn
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Checking parameters for BSIM 3.2 model cmosn
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+Note: No compatibility mode selected!
+
+
+Circuit: *include "TSMC_180nm.txt
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        1.8
+a0                                           0
+a1                                           0
+a2                                           0
+a3                                           0
+a4                                           0
+b0                                           0
+b1                                           0
+b2                                           0
+b3                                           0
+b4                                           0
+cin                                          0
+s0                                         1.8
+s1                                         1.8
+s2                                         1.8
+s3                                         1.8
+s4                                         1.8
+cout                                       1.8
+xcla.g0                                    1.8
+xcla.xgp0.xgp_and.n1                 0.0376819
+xcla.xgp0.xgp_xor.na                       1.8
+xcla.xgp0.xgp_xor.nb                       1.8
+xcla.xgp0.xgp_xor.ta                       1.8
+xcla.xgp0.xgp_xor.xand_a.n1          6.336e-09
+xcla.xgp0.xgp_xor.tb                       1.8
+xcla.xgp0.xgp_xor.xand_b.n1          6.336e-09
+xcla.xgp0.xgp_xor.xor_out.yn        1.8171e-09
+xcla.xgp0.xgp_xor.xor_out.xnor2n.nor2_p_a         1.75629
+xcla.p0                                    1.8
+xcla.g1                                    1.8
+xcla.xgp1.xgp_and.n1                 0.0376819
+xcla.xgp1.xgp_xor.na                       1.8
+xcla.xgp1.xgp_xor.nb                       1.8
+xcla.xgp1.xgp_xor.ta                       1.8
+xcla.xgp1.xgp_xor.xand_a.n1          6.336e-09
+xcla.xgp1.xgp_xor.tb                       1.8
+xcla.xgp1.xgp_xor.xand_b.n1          6.336e-09
+xcla.xgp1.xgp_xor.xor_out.yn        1.8171e-09
+xcla.xgp1.xgp_xor.xor_out.xnor2n.nor2_p_a         1.75629
+xcla.p1                                    1.8
+xcla.g2                                    1.8
+xcla.xgp2.xgp_and.n1                 0.0376819
+xcla.xgp2.xgp_xor.na                       1.8
+xcla.xgp2.xgp_xor.nb                       1.8
+xcla.xgp2.xgp_xor.ta                       1.8
+xcla.xgp2.xgp_xor.xand_a.n1          6.336e-09
+xcla.xgp2.xgp_xor.tb                       1.8
+xcla.xgp2.xgp_xor.xand_b.n1          6.336e-09
+xcla.xgp2.xgp_xor.xor_out.yn       1.81709e-09
+xcla.xgp2.xgp_xor.xor_out.xnor2n.nor2_p_a         1.75628
+xcla.p2                                    1.8
+xcla.g3                                    1.8
+xcla.xgp3.xgp_and.n1                 0.0376819
+xcla.xgp3.xgp_xor.na                       1.8
+xcla.xgp3.xgp_xor.nb                       1.8
+xcla.xgp3.xgp_xor.ta                       1.8
+xcla.xgp3.xgp_xor.xand_a.n1          6.336e-09
+xcla.xgp3.xgp_xor.tb                       1.8
+xcla.xgp3.xgp_xor.xand_b.n1          6.336e-09
+xcla.xgp3.xgp_xor.xor_out.yn       1.81709e-09
+xcla.xgp3.xgp_xor.xor_out.xnor2n.nor2_p_a         1.75628
+xcla.p3                                    1.8
+xcla.g4                                    1.8
+xcla.xgp4.xgp_and.n1                 0.0376819
+xcla.xgp4.xgp_xor.na                       1.8
+xcla.xgp4.xgp_xor.nb                       1.8
+xcla.xgp4.xgp_xor.ta                       1.8
+xcla.xgp4.xgp_xor.xand_a.n1          6.336e-09
+xcla.xgp4.xgp_xor.tb                       1.8
+xcla.xgp4.xgp_xor.xand_b.n1          6.336e-09
+xcla.xgp4.xgp_xor.xor_out.yn       1.81709e-09
+xcla.xgp4.xgp_xor.xor_out.xnor2n.nor2_p_a         1.75628
+xcla.p4                                    1.8
+xcla.t10                                   1.8
+xcla.xc1a.n1                            1.4155
+xcla.xc1.yn                         1.8171e-09
+xcla.xc1.xnor2n.nor2_p_a               1.75628
+xcla.c1                                    1.8
+xcla.t20                           1.44595e-08
+xcla.xc2a.n1                       7.22975e-09
+xcla.t21                                   1.8
+xcla.xc2b.n1                            1.4139
+xcla.xc2b.n2                           1.39236
+xcla.xc2.yn                         2.4092e-09
+xcla.xc2.xnor3n.nor3_p_ab              1.75658
+xcla.xc2.xnor3n.nor3_p_bc              1.75658
+xcla.c2                                    1.8
+xcla.t30                           1.42884e-08
+xcla.xc3a.n1                       7.14422e-09
+xcla.t31                           2.18659e-08
+xcla.xc3b.n1                       1.45773e-08
+xcla.xc3b.n2                       7.28864e-09
+xcla.t32                                   1.8
+xcla.xc3c.n1                           1.41314
+xcla.xc3c.n2                           1.39115
+xcla.xc3c.n3                           1.37958
+xcla.xc3.yn                        2.96729e-09
+xcla.xc3.xnor4n.nor4_p_ab              1.75672
+xcla.xc3.xnor4n.nor4_p_bc              1.75672
+xcla.xc3.xnor4n.nor4_p_cd              1.75672
+xcla.c3                                    1.8
+xcla.t40                            1.4187e-08
+xcla.xc4a.n1                       7.09348e-09
+xcla.t41                           2.17106e-08
+xcla.xc4b.n1                       1.44738e-08
+xcla.xc4b.n2                       7.23688e-09
+xcla.t42                            2.9783e-08
+xcla.xc4c.n1                       2.23372e-08
+xcla.xc4c.n2                       1.48915e-08
+xcla.xc4c.n3                       7.44574e-09
+xcla.t43                                   1.8
+xcla.xc4d.n1                           1.41227
+xcla.xc4d.n2                           1.39008
+xcla.xc4d.n3                            1.3783
+xcla.xc4d.n4                           1.37047
+xcla.xc4.yn                        3.44782e-09
+xcla.xc4.xnor5n.nor5_p_ab              1.75681
+xcla.xc4.xnor5n.nor5_p_bc              1.75681
+xcla.xc4.xnor5n.nor5_p_cd              1.75681
+xcla.xc4.xnor5n.nor5_p_de              1.75681
+xcla.c4                                    1.8
+xcla.t50                           1.45062e-08
+xcla.xc5a.n1                       7.25309e-09
+xcla.xc5.yn                        1.26606e-08
+xcla.xc5.xnor2n.nor2_p_a                   1.8
+xcla.xs0.na                        7.06225e-09
+xcla.xs0.nb                                1.8
+xcla.xs0.ta                        1.45062e-08
+xcla.xs0.xand_a.n1                 7.25309e-09
+xcla.xs0.tb                                1.8
+xcla.xs0.xand_b.n1                    0.037844
+xcla.xs0.xor_out.yn                1.17623e-08
+xcla.xs0.xor_out.xnor2n.nor2_p_a        0.429502
+xcla.xs1.na                        7.06225e-09
+xcla.xs1.nb                        7.06225e-09
+xcla.xs1.ta                                1.8
+xcla.xs1.xand_a.n1                     1.41588
+xcla.xs1.tb                                1.8
+xcla.xs1.xand_b.n1                     1.41588
+xcla.xs1.xor_out.yn                1.81156e-09
+xcla.xs1.xor_out.xnor2n.nor2_p_a          1.7563
+xcla.xs2.na                        7.06225e-09
+xcla.xs2.nb                        7.06225e-09
+xcla.xs2.ta                                1.8
+xcla.xs2.xand_a.n1                     1.41588
+xcla.xs2.tb                                1.8
+xcla.xs2.xand_b.n1                     1.41588
+xcla.xs2.xor_out.yn                1.81157e-09
+xcla.xs2.xor_out.xnor2n.nor2_p_a          1.7563
+xcla.xs3.na                        7.06225e-09
+xcla.xs3.nb                        7.06225e-09
+xcla.xs3.ta                                1.8
+xcla.xs3.xand_a.n1                     1.41588
+xcla.xs3.tb                                1.8
+xcla.xs3.xand_b.n1                     1.41588
+xcla.xs3.xor_out.yn                1.81156e-09
+xcla.xs3.xor_out.xnor2n.nor2_p_a          1.7563
+xcla.xs4.na                        7.06225e-09
+xcla.xs4.nb                        7.06225e-09
+xcla.xs4.ta                                1.8
+xcla.xs4.xand_a.n1                     1.41588
+xcla.xs4.tb                                1.8
+xcla.xs4.xand_b.n1                     1.41588
+xcla.xs4.xor_out.yn                1.69967e-09
+xcla.xs4.xor_out.xnor2n.nor2_p_a          1.7563
+vcin#branch                                  0
+vb4#branch                                   0
+vb3#branch                                   0
+vb2#branch                                   0
+vb1#branch                                   0
+vb0#branch                                   0
+va4#branch                                   0
+va3#branch                                   0
+va2#branch                                   0
+va1#branch                                   0
+va0#branch                                   0
+vdd#branch                        -1.17912e-09
+
+ Reference value :  2.00070e-07 Reference value :  4.00878e-07 Reference value :  7.00434e-07 Reference value :  1.00001e-06 Reference value :  1.20464e-06 Reference value :  1.50087e-06 Reference value :  1.80036e-06 Reference value :  2.10024e-06 Reference value :  2.30229e-06 Reference value :  2.60036e-06 Reference value :  2.90042e-06 Reference value :  3.20020e-06 Reference value :  3.50170e-06 Reference value :  3.90024e-06 Reference value :  4.22499e-06 Reference value :  4.60023e-06 Reference value :  5.00007e-06 Reference value :  5.30065e-06 Reference value :  5.70026e-06 Reference value :  6.02033e-06 Reference value :  6.40022e-06 Reference value :  6.70026e-06 Reference value :  6.95017e-06 Reference value :  7.20032e-06 Reference value :  7.50017e-06 Reference value :  7.74780e-06 Reference value :  8.00052e-06 Reference value :  8.30048e-06 Reference value :  8.60010e-06 Reference value :  8.80038e-06 Reference value :  9.10028e-06 Reference value :  9.40007e-06 Reference value :  9.69357e-06 Reference value :  1.00004e-05 Reference value :  1.04002e-05 Reference value :  1.08000e-05 Reference value :  1.11007e-05 Reference value :  1.15002e-05 Reference value :  1.18018e-05 Reference value :  1.22003e-05 Reference value :  1.26002e-05
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+
+No. of Data Rows : 4123
+Note: Simulation executed from .control section 

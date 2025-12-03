@@ -1,0 +1,48 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x613c635a31a0 .scope module, "tb_INV" "tb_INV" 2 3;
+ .timescale -9 -12;
+v0x613c635b3780_0 .var "A", 0 0;
+v0x613c635b3820_0 .net "Y", 0 0, L_0x613c635b38f0;  1 drivers
+S_0x613c635a3330 .scope module, "uut" "INV" 2 8, 3 1 0, S_0x613c635a31a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /OUTPUT 1 "Y";
+L_0x613c635b38f0 .functor NOT 1, v0x613c635b3780_0, C4<0>, C4<0>, C4<0>;
+v0x613c635a3510_0 .net "A", 0 0, v0x613c635b3780_0;  1 drivers
+v0x613c635b3660_0 .net "Y", 0 0, L_0x613c635b38f0;  alias, 1 drivers
+    .scope S_0x613c635a31a0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "inv.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x613c635a31a0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x613c635b3780_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x613c635b3780_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x613c635b3780_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x613c635b3780_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x613c635b3780_0, 0, 1;
+    %delay 20000, 0;
+    %vpi_call 2 20 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_INV.v";
+    "INV.v";

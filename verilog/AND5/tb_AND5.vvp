@@ -1,0 +1,76 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x61647fe5ce90 .scope module, "tb_AND5" "tb_AND5" 2 2;
+ .timescale -9 -12;
+v0x61647fe70770_0 .var "A", 0 0;
+v0x61647fe70830_0 .var "B", 0 0;
+v0x61647fe70900_0 .var "C", 0 0;
+v0x61647fe70a00_0 .var "D", 0 0;
+v0x61647fe70ad0_0 .var "E", 0 0;
+v0x61647fe70b70_0 .net "Y", 0 0, L_0x61647fe71040;  1 drivers
+v0x61647fe70c40_0 .var/i "i", 31 0;
+S_0x61647fe5d020 .scope module, "uut" "AND5" 2 7, 3 1 0, S_0x61647fe5ce90;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "C";
+    .port_info 3 /INPUT 1 "D";
+    .port_info 4 /INPUT 1 "E";
+    .port_info 5 /OUTPUT 1 "Y";
+L_0x61647fe70ce0 .functor AND 1, v0x61647fe70770_0, v0x61647fe70830_0, C4<1>, C4<1>;
+L_0x61647fe70e20 .functor AND 1, L_0x61647fe70ce0, v0x61647fe70900_0, C4<1>, C4<1>;
+L_0x61647fe70f30 .functor AND 1, L_0x61647fe70e20, v0x61647fe70a00_0, C4<1>, C4<1>;
+L_0x61647fe71040 .functor AND 1, L_0x61647fe70f30, v0x61647fe70ad0_0, C4<1>, C4<1>;
+v0x61647fe5dfb0_0 .net "A", 0 0, v0x61647fe70770_0;  1 drivers
+v0x61647fe70020_0 .net "B", 0 0, v0x61647fe70830_0;  1 drivers
+v0x61647fe700e0_0 .net "C", 0 0, v0x61647fe70900_0;  1 drivers
+v0x61647fe70180_0 .net "D", 0 0, v0x61647fe70a00_0;  1 drivers
+v0x61647fe70240_0 .net "E", 0 0, v0x61647fe70ad0_0;  1 drivers
+v0x61647fe70350_0 .net "Y", 0 0, L_0x61647fe71040;  alias, 1 drivers
+v0x61647fe70410_0 .net *"_ivl_0", 0 0, L_0x61647fe70ce0;  1 drivers
+v0x61647fe704f0_0 .net *"_ivl_2", 0 0, L_0x61647fe70e20;  1 drivers
+v0x61647fe705d0_0 .net *"_ivl_4", 0 0, L_0x61647fe70f30;  1 drivers
+    .scope S_0x61647fe5ce90;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "and5.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x61647fe5ce90 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x61647fe70c40_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x61647fe70c40_0;
+    %cmpi/s 32, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x61647fe70c40_0;
+    %pad/s 5;
+    %split/vec4 1;
+    %store/vec4 v0x61647fe70ad0_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v0x61647fe70a00_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v0x61647fe70900_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v0x61647fe70830_0, 0, 1;
+    %store/vec4 v0x61647fe70770_0, 0, 1;
+    %delay 10000, 0;
+    %load/vec4 v0x61647fe70c40_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x61647fe70c40_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %delay 20000, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_AND5.v";
+    "AND5.v";
