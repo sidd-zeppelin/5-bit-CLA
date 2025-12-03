@@ -1,0 +1,21 @@
+* SPICE3 file created from OR3.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 OUT a_17_29# GND Gnd cmosn w=10 l=2
++  ad=50 pd=30 as=160 ps=92
+M1001 GND B a_17_29# Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=110 ps=62
+M1002 a_17_21# B a_17_13# w_11_0# cmosp w=60 l=2
++  ad=360 pd=132 as=360 ps=132
+M1003 a_17_29# C GND Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 a_17_29# C a_17_21# w_11_0# cmosp w=60 l=2
++  ad=300 pd=130 as=0 ps=0
+M1005 a_17_29# A GND Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 OUT a_17_29# VDD w_113_19# cmosp w=20 l=2
++  ad=100 pd=50 as=400 ps=180
+M1007 a_17_13# A VDD w_11_0# cmosp w=60 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 w_11_0# Gnd 2.89fF

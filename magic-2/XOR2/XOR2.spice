@@ -1,0 +1,41 @@
+* NGSPICE file created from XOR.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit XOR
+
+M1000 OUT a_111_n9# VDD w_201_0# cmosp w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=6.48p ps=36u
+M1001 VDD A a_111_47# w_105_34# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1002 GND a_111_47# a_243_13# Gnd cmosn w=1.8u l=0.18u
++  ad=3.24p pd=18u as=0.972p ps=4.68u
+M1003 a_20_13# B VDD w_14_0# cmosp w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0p ps=0u
+M1004 GND A a_56_13# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1005 a_147_47# a_20_13# a_111_47# Gnd cmosn w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0.81p ps=4.5u
+M1006 GND a_20_13# a_147_n9# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.972p ps=4.68u
+M1007 VDD a_111_47# OUT w_201_0# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1008 a_243_13# a_111_n9# OUT Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.81p ps=4.5u
+M1009 a_147_n9# B a_111_n9# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.81p ps=4.5u
+M1010 a_111_n9# B VDD w_105_n22# cmosp w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0p ps=0u
+M1011 GND A a_147_47# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1012 VDD A a_20_13# w_14_0# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1013 a_111_47# a_20_13# VDD w_105_34# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1014 a_56_13# B a_20_13# Gnd cmosn w=1.8u l=0.18u
++  ad=0p pd=0u as=0.81p ps=4.5u
+M1015 VDD a_20_13# a_111_n9# w_105_n22# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+.end
+

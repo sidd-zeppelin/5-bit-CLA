@@ -1,0 +1,33 @@
+* NGSPICE file created from gen_prop.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit gen_prop
+
+M1000 P a_17_n39# GND Gnd cmosn w=0.9u l=0.18u
++  ad=0.405p pd=2.7u as=2.025p ps=12.6u
+M1001 a_17_n39# A GND Gnd cmosn w=0.9u l=0.18u
++  ad=0.486p pd=2.88u as=0p ps=0u
+M1002 P a_17_n39# VDD w_94_n38# cmosp w=1.8u l=0.18u
++  ad=0.81p pd=4.5u as=4.86p ps=26.1u
+M1003 a_17_n39# B a_17_n47# w_11_n60# cmosp w=3.6u l=0.18u
++  ad=1.62p pd=8.1u as=1.944p ps=8.28u
+M1004 a_17_18# B VDD w_11_5# cmosp w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0p ps=0u
+M1005 a_50_18# B GND Gnd cmosn w=1.8u l=0.18u
++  ad=0.972p pd=4.68u as=0p ps=0u
+M1006 G a_17_18# VDD w_84_26# cmosp w=1.8u l=0.18u
++  ad=0.81p pd=4.5u as=0p ps=0u
+M1007 VDD A a_17_18# w_11_5# cmosp w=1.8u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1008 a_69_n39# B a_17_n39# Gnd cmosn w=0.9u l=0.18u
++  ad=0.405p pd=2.7u as=0p ps=0u
+M1009 a_17_18# A a_50_18# Gnd cmosn w=1.8u l=0.18u
++  ad=0.81p pd=4.5u as=0p ps=0u
+M1010 a_17_n47# A VDD w_11_n60# cmosp w=3.6u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1011 G a_17_18# GND Gnd cmosn w=0.9u l=0.18u
++  ad=0.405p pd=2.7u as=0p ps=0u
+.end
+

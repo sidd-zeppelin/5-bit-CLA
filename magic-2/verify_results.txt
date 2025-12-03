@@ -1,0 +1,22 @@
+CLA Verification Results
+------------------------
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Test %t FAIL  (Got %S3b%S2b%S1b%S0b %C4b, Expected %E3%E2%E1%E0 %EC)
+Verification complete.

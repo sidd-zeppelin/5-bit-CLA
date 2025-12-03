@@ -1,0 +1,21 @@
+* SPICE3 file created from NOR4.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 OUT D a_23_22# w_n6_16# cmosp w=80 l=2
++  ad=400 pd=170 as=480 ps=172
+M1001 a_7_22# A VDD w_n6_16# cmosp w=80 l=2
++  ad=480 pd=172 as=400 ps=170
+M1002 GND D OUT Gnd cmosn w=10 l=2
++  ad=160 pd=92 as=120 ps=64
+M1003 GND B OUT Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 a_15_22# B a_7_22# w_n6_16# cmosp w=80 l=2
++  ad=480 pd=172 as=0 ps=0
+M1005 OUT A GND Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 OUT C GND Gnd cmosn w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_23_22# C a_15_22# w_n6_16# cmosp w=80 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 w_n6_16# Gnd 4.44fF
